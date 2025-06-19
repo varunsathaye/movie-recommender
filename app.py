@@ -2,11 +2,13 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
+import io
+
 url='https://huggingface.co/varunsathaye/movie_assets/resolve/main/similarity.pkl'
 response=requests.get(url)
 movies_dict=pickle.load(open('movie_dict.pkl', 'rb'))
 movies=pd.DataFrame(movies_dict)
-similarity=pickle.load(open(response.content,'rb'))
+similarity=pickle.load(io.BytesIO(response.content))
 
 def recommend_movies(movie):
     movie_index = movies[movies['title'] == movie].index[0]
