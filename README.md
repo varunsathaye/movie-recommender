@@ -2,13 +2,13 @@
 
 A web-based Movie Recommender System built with **Streamlit**, trained using collaborative filtering, and hosted using **Streamlit Cloud**. Large assets like similarity matrices are loaded from [Hugging Face Hub](https://huggingface.co/).
 
-![App Screenshot](https://your-screenshot-url-if-any.png)
+![App Screenshot](https://github.com/varunsathaye/movie-recommender/blob/main/ss.png)
 
 ---
 
 ## 🔗 Live Demo
 
-👉 [Click here to try the app](https://your-streamlit-cloud-link-here)
+👉 [Click here to try the app](https://igivemovies.streamlit.app)
 
 ---
 
